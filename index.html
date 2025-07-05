@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jharkhand Holiday API</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>📅 Jharkhand Holiday Lookup</h1>
+  <div class="form-container">
+    <label for="type">Type:</label>
+    <select id="type">
+      <option value="">--Any--</option>
+      <option value="Public">Public</option>
+      <option value="Optional">Optional</option>
+      <option value="Regional">Regional</option>
+    </select>
+
+    <label for="religion">Religion:</label>
+    <select id="religion">
+      <option value="">--Any--</option>
+      <option value="Hindu">Hindu</option>
+      <option value="Islam">Islam</option>
+      <option value="Christian">Christian</option>
+      <option value="Buddhist">Buddhist</option>
+      <option value="Jain">Jain</option>
+      <option value="Tribal">Tribal</option>
+      <option value="All">All</option>
+    </select>
+
+    <label for="name">Holiday Name:</label>
+    <input type="text" id="name" placeholder="e.g. Diwali" />
+
+    <button onclick="fetchHolidays()">🔍 Submit & View Holidays</button>
+  </div>
+
+  <div class="results" id="results"></div>
+
+  <script>
+    async function fetchHolidays() {
+      const type = document.getElementById('type').value.trim();
+      const religion = document.getElementById('religion').value.trim();
+      const name = document.getElementById('name').value.trim();
+
+      const base = 'https://holiday-api-6ciz.onrender.com/api/holidays';
+      const params = new URLSearchParams({
+        state: 'Jharkhand',
+        year: '2025'
+      });
+
+      if (type) params.append('type', type);
+      if (religion) params.append('religion', religion);
+      if (name) params.append('name', name);
+
+      const url = `${base}?${params.toString()}`;
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.innerHTML = '<p>Fetching holidays...</p>';
+
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+
+        if (!data.holidays || data.holidays.length === 0) {
+          resultsDiv.innerHTML = '<p>No holidays found.</p>';
+          return;
+        }
+
+        resultsDiv.innerHTML = data.holidays.map(holiday => `
+          <div class="holiday">
+            <h3>${holiday.name}</h3>
+            <p><strong>Date:</strong> ${holiday.date}</p>
+            <p><strong>Type:</strong> ${holiday.type}</p>
+            <p><strong>Religion:</strong> ${holiday.religion}</p>
+            <p>${holiday.description}</p>
+          </div>
+        `).join('');
+      } catch (err) {
+        resultsDiv.innerHTML = '<p style="color:red;">Failed to fetch data. Try again later.</p>';
+      }
+    }
+  </script>
+</body>
+</html>

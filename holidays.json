@@ -1,0 +1,175 @@
+{
+  "id": 1,
+  "state": "Jharkhand",
+  "year": 2025,
+  "holidays": [
+    {
+      "name": "Republic Day",
+      "date": "2025-01-26",
+      "type": "Public",
+      "religion": "All",
+      "description": "Indian Republic Day, celebration of the adoption of the Indian Constitution."
+    },
+    {
+      "name": "Maha Shivratri",
+      "date": "2025-02-26",
+      "type": "Optional",
+      "religion": "Hindu",
+      "description": "Celebration of Lord Shiva's wedding."
+    },
+    {
+      "name": "Idul Fitr",
+      "date": "2025-03-31",
+      "type": "Public",
+      "religion": "Islam",
+      "description": "Marks the end of Ramadan, a month of fasting."
+    },
+    {
+      "name": "Sarhul",
+      "date": "2025-04-01",
+      "type": "Regional",
+      "religion": "Tribal",
+      "description": "Tribal festival celebrating the Sal tree and nature worship."
+    },
+    {
+      "name": "Ram Navami",
+      "date": "2025-04-06",
+      "type": "Public",
+      "religion": "Hindu",
+      "description": "Celebration of the birth of Lord Rama."
+    },
+    {
+      "name": "Mahavir Jayanti",
+      "date": "2025-04-10",
+      "type": "Public",
+      "religion": "Jain",
+      "description": "Birth anniversary of Lord Mahavir, the 24th Tirthankara."
+    },
+    {
+      "name": "Dr Ambedkar Jayanti",
+      "date": "2025-04-14",
+      "type": "Public",
+      "religion": "All",
+      "description": "Birth anniversary of Dr. B.R. Ambedkar, chief architect of the Indian Constitution."
+    },
+    {
+      "name": "Good Friday",
+      "date": "2025-04-18",
+      "type": "Public",
+      "religion": "Christian",
+      "description": "Commemorates the crucifixion of Jesus Christ."
+    },
+    {
+      "name": "Buddha Purnima",
+      "date": "2025-05-12",
+      "type": "Public",
+      "religion": "Buddhist",
+      "description": "Celebrates the birth of Gautama Buddha."
+    },
+    {
+      "name": "Bakrid / Eid al-Adha",
+      "date": "2025-06-07",
+      "type": "Public",
+      "religion": "Islam",
+      "description": "Festival of Sacrifice, commemorating the willingness of Ibrahim to sacrifice his son."
+    },
+    {
+      "name": "Muharram",
+      "date": "2025-07-06",
+      "type": "Public",
+      "religion": "Islam",
+      "description": "Islamic New Year and mourning of Imam Hussain’s martyrdom."
+    },
+    {
+      "name": "Independence Day",
+      "date": "2025-08-15",
+      "type": "Public",
+      "religion": "All",
+      "description": "Marks India's independence from British rule in 1947."
+    },
+    {
+      "name": "Janmashtami",
+      "date": "2025-08-16",
+      "type": "Public",
+      "religion": "Hindu",
+      "description": "Celebration of the birth of Lord Krishna."
+    },
+    {
+      "name": "Karma Puja",
+      "date": "2025-09-03",
+      "type": "Regional",
+      "religion": "Tribal",
+      "description": "Tribal festival celebrating nature and the Karma tree."
+    },
+    {
+      "name": "Eid e Milad",
+      "date": "2025-09-05",
+      "type": "Public",
+      "religion": "Islam",
+      "description": "Commemorates the birth of the Prophet Muhammad."
+    },
+    {
+      "name": "Maha Ashtami",
+      "date": "2025-09-30",
+      "type": "Public",
+      "religion": "Hindu",
+      "description": "Eighth day of Durga Puja, celebrated with fasting and prayers."
+    },
+    {
+      "name": "Maha Navami",
+      "date": "2025-10-01",
+      "type": "Public",
+      "religion": "Hindu",
+      "description": "Ninth day of Durga Puja, leading up to Vijayadashami."
+    },
+    {
+      "name": "Vijaya Dashami",
+      "date": "2025-10-02",
+      "type": "Public",
+      "religion": "Hindu",
+      "description": "Marks the victory of good over evil; end of Durga Puja and Dussehra."
+    },
+    {
+      "name": "Gandhi Jayanti",
+      "date": "2025-10-02",
+      "type": "Public",
+      "religion": "All",
+      "description": "Birth anniversary of Mahatma Gandhi."
+    },
+    {
+      "name": "Diwali",
+      "date": "2025-10-20",
+      "type": "Public",
+      "religion": "Hindu",
+      "description": "Festival of Lights; celebrates the return of Lord Rama to Ayodhya."
+    },
+    {
+      "name": "Chhath Puja",
+      "date": "2025-10-27",
+      "type": "Regional",
+      "religion": "Hindu",
+      "description": "Dedicated to Sun God; involves ritual bathing and fasting."
+    },
+    {
+        "name":"Chhath Puja Holiday",
+        "date":"2025-10-28",
+        "type":"Regional",
+        "religion":"Hindu",
+        "description":"Dedicated to Sun God; involves ritual bathing and fasting."
+    },
+    {
+        "name":"Guru Nanak Jayanti",
+        "date":"2025-11-05",
+        "type":"Regional",
+        "religion":"Sikh",
+        "description":"Birth anniversary of Guru Nanak."
+    },
+    {
+        "name":"Christmas",
+        "date":"2025-12-25",
+        "type":"Public",
+        "religion":"Christian",
+        "description":"Birth anniversary of Zesus Christ."
+    }
+  ]
+}
