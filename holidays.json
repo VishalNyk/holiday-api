@@ -170,6 +170,14 @@
         "type":"Public",
         "religion":"Christian",
         "description":"Birth anniversary of Zesus Christ."
+    },
+    {
+      "name":"AyushDay",
+      "date":"2025-07-15",
+      "type":"Private",
+      "relegion":"Hindu",
+      "description":"Birth of Profound Researcher who has ADHD."
     }
   ]
 }
+
